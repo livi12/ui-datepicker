@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>datepicker</title>
+	<link rel="stylesheet" href="http://static.leke.cn/styles/common/global.css">
+</head>
+<body>
+	<input type="text" id="jStartDate" name="stDate" class="u-ipt u-ipt-nm Wdate" readonly="">
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+	<script type="text/javascript" src="ui-datepicker.js"></script>
+	<script type="text/javascript">
+		$('#jStartDate').click(function(){
+			WdatePicker({
+				dateFmt:'yyyy-MM-dd',
+				readOnly:true
+			});
+		});
+	</script>
+</body>
+</html>
